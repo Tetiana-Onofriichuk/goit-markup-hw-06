@@ -25,41 +25,47 @@
   </head>
   <body>
     <!-- header -->
-    <header class="header">
-      <div class="container page-header">
-        <nav class="navigation">
-          <a class="logo logo-header" href="./index.html">
+    <header class="page-header">
+      <div class="container header-container">
+        <nav class="header-nav">
+          <a class="logo header-logo" href="./index.html">
             Web
-            <span class="logo-part">Studio</span>
+            <span class="part-logo">Studio</span>
           </a>
-          <ul class="navig">
-            <li>
-              <a href="./index.html" class="link-nav link-nav-studio">Studio</a>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="./index.html" class="nav-link nav-link-studio">Studio</a>
             </li>
-            <li><a href="" class="link-nav">Portfolio</a></li>
-            <li><a href="" class="link-nav">Contacts</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Portfolio</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Contacts</a></li>
           </ul>
         </nav>
-        <address class="address">
-          <ul class="contacts">
-            <li>
-              <a href="mailto:info@devstudio.com" class="link-adr"
+        <address class="contacts">
+          <ul class="contacts-list">
+            <li class="contacts-item">
+              <a class="contacts-link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
-              <a href="tel:+110001111111" class="link-adr"
+            <li class="contacts-item">
+              <a class="contacts-link" href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
             </li>
           </ul>
         </address>
+
+        <button class="mob-btn" type="button">
+          <svg class="mob-icon" width="24" height="24">
+            <use href="./images/icon-mob.svg#icon-group"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- header end -->
     <main>
       <!-- section 1 -->
-      <section class="main-page">
+      <section class="main-page hidden">
         <div class="container">
           <h1 class="title-one">Effective Solutions for Your Business</h1>
           <button type="button" class="button">Order Service</button>
@@ -69,7 +75,7 @@
       <!-- section 1 end -->
 
       <!-- section 2 -->
-      <section class="section-advantages">
+      <section class="section-advantages hidden">
         <div class="container">
           <h2 class="title-two visually-hidden">advantages</h2>
           <ul class="advantages">
@@ -131,7 +137,7 @@
       <!-- section 2 end -->
 
       <!-- section 3 -->
-      <section class="section-team">
+      <section class="section-team hidden">
         <div class="container">
           <h2 class="title-two title-two-team">Our Team</h2>
           <ul class="our-team">
@@ -304,7 +310,7 @@
       <!-- section 3 end -->
 
       <!-- section 4 -->
-      <section class="section-portfolio">
+      <section class="section-portfolio hidden">
         <div class="container">
           <h2 class="title-two our-portfolio">Our Portfolio</h2>
 
@@ -426,7 +432,7 @@
     </main>
 
     <!-- footer -->
-    <footer class="footer-own">
+    <footer class="footer-own hidden">
       <div class="container footer-container">
         <div class="logo-paragraf">
           <a class="logo logo-footer" href="./index.html">
@@ -498,7 +504,7 @@
     <!-- footer end -->
 
     <!-- modal overlay -->
-    <div class="modal-overlay">
+    <div class="modal-overlay hidden">
       <div class="modal">
         <button class="btn-close" type="button">
           <svg class="icon-close-modal" width="8" height="8">
