@@ -183,7 +183,6 @@ button{
 .contacts-list {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 12px;
 }
 .contacts-link {
@@ -195,5 +194,149 @@ button{
     color: #434455;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 }
+@media screen and (min-width: 1158px){
+.header-logo {
+    margin-right: 76px;
+    }
+.contacts-list {
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+        }
+.contacts-link {
+    padding: 24px 0;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+}
+
+/* --------section 1----------- */
+
+.main-page {
+    padding: 72px 0px;
+    background-image: linear-gradient(to bottom,
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+        url(../images/people-office.jpg);
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.title-one{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
+    max-width: 216px;
+    margin: 0 auto 72px;
+}
+.button {
+    background-color: #4D5AE5;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    min-width: 169px;
+    display: block;
+    padding: 16px 32px;
+    border-radius: 4px;
+    border: none;
+    margin: 48px auto 0;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button:hover,
+.button:focus{
+background-color: #404BBF;
+}
+
+@media screen and (min-width: 768px){
+.main-page {
+
+        padding: 112px 0px;
+    }
+ .title-one{
+        font-size: 56px;
+        line-height: 1.07;
+        color: #fff;
+        max-width: 496px;
+        margin: 0 auto 36px;
+ }
+ 
+}
+
+@media screen and (min-width: 1158px){
+    .main-page {
+      padding: 188px 0px;
+        }
+    .title-one {
+      margin: 0 auto 36px;
+        }   
+}
+
+/*-------- section 2-------- */
+.section-advantages {
+    padding: 96px 0;
+}
+.title-two {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+    color: #2e2f42;
+}
+.advantages {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    padding: 0;
+}
+.icon-advant-block{
+display: none;
+}
+.title-three{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    margin-bottom: 8px;
+}
+.page-advant {
+font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+@media screen and (min-width: 768px){
+.advantages{  
+   flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 24px;
+    column-gap: 72px;
+    padding:0;   
+    }
+
+.punct{
+width: 356px;
+align-items: flex-start;
+justify-content: flex-start;
+gap: 24px;
+flex-basis:calc((100%-24px) / 2);
+}
+}
+
+
+
+    
