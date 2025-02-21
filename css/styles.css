@@ -556,14 +556,18 @@ gap: 48px;
     .portfolio-menu {
     flex-basis: calc((100% - 48px) / 3);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .portfolio-menu-list{
     position: relative;
-    overflow: hidden;}
+    overflow: hidden;
+
+    }
     .portfolio-menu:hover {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 2px 1px rgba(46, 47, 66, 0.08);
     }
-    .text-overlay {
+    .portfolio-menu-list .text-overlay {
     display: block;
     background-color: #4d5ae5;
     color: #f4f4fd;
@@ -581,8 +585,6 @@ gap: 48px;
     .portfolio-menu:hover .text-overlay {
     transform: translateY(0);
     }
-
-
 }
 
 
