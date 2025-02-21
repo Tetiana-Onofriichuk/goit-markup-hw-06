@@ -57,7 +57,7 @@
 
         <button class="mob-btn" type="button">
           <svg class="mob-icon" width="24" height="24">
-            <use href="./images/icon-mob.svg#icon-group"></use>
+            <use href="./images/icons.svg#icon-Group"></use>
           </svg>
         </button>
       </div>
@@ -137,56 +137,19 @@
       <!-- section 2 end -->
 
       <!-- section 3 -->
-      <section class="section-team hidden">
+      <section class="section-team">
         <div class="container">
           <h2 class="title-two title-two-team">Our Team</h2>
           <ul class="our-team">
             <li class="team-link">
               <img
-                src="./images/mark_guerrero.jpg"
+                src="./images/our-team/mark_guerrero.jpg"
                 alt="Mark Guerrero"
                 width="264"
               />
               <div class="name-prof">
                 <h3 class="title-three name">Mark Guerrero</h3>
-                <p class="page">Product Designer</p>
-                <ul class="icon-menu">
-                  <li class="icon-social">
-                    <a href="" class="link-social">
-                      <svg class="icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="icon-social">
-                    <a href="" class="link-social">
-                      <svg class="icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="icon-social">
-                    <a href="" class="link-social">
-                      <svg class="icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="icon-social">
-                    <a href="" class="link-social">
-                      <svg class="icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="team-link">
-              <img src="./images/tom_ford.jpg" alt="Tom Ford" width="264" />
-              <div class="name-prof">
-                <h3 class="title-three name">Tom Ford</h3>
-                <p class="page">Frontend Developer</p>
+                <p class="page-portfolio">Product Designer</p>
                 <ul class="icon-menu">
                   <li class="icon-social">
                     <a href="" class="link-social">
@@ -221,13 +184,54 @@
             </li>
             <li class="team-link">
               <img
-                src="./images/camila_garcia.jpg"
+                src="./images/our-team/tom_ford.jpg"
+                alt="Tom Ford"
+                width="264"
+              />
+              <div class="name-prof">
+                <h3 class="title-three name">Tom Ford</h3>
+                <p class="page-portfolio">Frontend Developer</p>
+                <ul class="icon-menu">
+                  <li class="icon-social">
+                    <a href="" class="link-social">
+                      <svg class="icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-social">
+                    <a href="" class="link-social">
+                      <svg class="icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-social">
+                    <a href="" class="link-social">
+                      <svg class="icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-social">
+                    <a href="" class="link-social">
+                      <svg class="icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="team-link">
+              <img
+                src="./images/our-team/camila_garcia.jpg"
                 alt="Camila Garcia"
                 width="264"
               />
               <div class="name-prof">
                 <h3 class="title-three name">Camila Garcia</h3>
-                <p class="page">Marketing</p>
+                <p class="page-portfolio">Marketing</p>
 
                 <ul class="icon-menu">
                   <li class="icon-social">
@@ -263,13 +267,13 @@
             </li>
             <li class="team-link">
               <img
-                src="./images/daniel_wilson.jpg"
+                src="./images/our-team/daniel_wilson.jpg"
                 alt="Daniel Wilson"
                 width="264"
               />
               <div class="name-prof">
                 <h3 class="title-three name">Daniel Wilson</h3>
-                <p class="page">UI Designer</p>
+                <p class="page-portfolio">UI Designer</p>
 
                 <ul class="icon-menu">
                   <li class="icon-social">
@@ -310,18 +314,42 @@
       <!-- section 3 end -->
 
       <!-- section 4 -->
-      <section class="section-portfolio hidden">
+      <section class="section-portfolio">
         <div class="container">
           <h2 class="title-two our-portfolio">Our Portfolio</h2>
 
           <ul class="portfolio">
             <li class="portfolio-menu">
               <div class="portfolio-menu-list">
-                <img
-                  src="./images/portfolio/banking_app.jpg"
-                  alt="Banking App"
-                  width="360"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio-new/banking-app-mob.jpg    1x,
+                      ./images/portfolio-new/banking-app-mob@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio-new/banking-app-tab.jpg    1x,
+                      ./images/portfolio-new/banking-app-tab@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio-new/banking-app-desk.jpg    1x,
+                      ./images/portfolio-new/banking-app-desk@2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+
+                  <img
+                    src="./images/portfolio/banking_app.jpg"
+                    alt="Banking App"
+                    width="360"
+                  />
+                </picture>
 
                 <p class="text-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -336,11 +364,35 @@
             </li>
             <li class="portfolio-menu">
               <div class="portfolio-menu-list">
-                <img
-                  src="./images/portfolio/cashless_payment.jpg"
-                  alt="Cashless Payment"
-                  width="360"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio-new/cashless_payment-mob.jpg    1x,
+                      ./images/portfolio-new/cashless_payment-mob@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio-new/cashless_payment-tab.jpg    1x,
+                      ./images/portfolio-new/cashless_payment-tab@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio-new/cashless_payment-desk.jpg    1x,
+                      ./images/portfolio-new/cashless_payment-desk@2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+
+                  <img
+                    src="./images/portfolio/banking_app.jpg"
+                    alt="Banking App"
+                    width="360"
+                  />
+                </picture>
                 <p class="text-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
