@@ -61,6 +61,79 @@
           </svg>
         </button>
       </div>
+      <!-- mobile-menu -->
+      <div class="mobile-menu is-open">
+        <div class="container mobile-menu-container">
+          <button class="mobile-button" type="button">
+            <svg class="icon-close-mobile" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-nav-list">
+              <li class="mobaile-nav-item">
+                <a href="" class="mobile-nav-link mobile-nav-link-studio"
+                  >Studio</a
+                >
+              </li>
+              <li class="mobaile-nav-item">
+                <a href="" class="mobile-nav-link">Portfolio</a>
+              </li>
+              <li class="mobaile-nav-item">
+                <a href="" class="mobile-nav-link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="mobile-address">
+            <ul class="mob-adr-list">
+              <li class="mob-adr-item">
+                <a
+                  class="mob-adr-link mob-adr-link-tel"
+                  href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mob-adr-item">
+                <a class="mob-adr-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <div>
+            <ul class="mob-social-list">
+              <li class="mob-social-item">
+                <a href="" class="mob-social-link">
+                  <svg class="icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-social-item">
+                <a href="" class="mob-social-link">
+                  <svg class="icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-social-item">
+                <a href="" class="mob-social-link">
+                  <svg class="icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-social-item">
+                <a href="" class="mob-social-link">
+                  <svg class="icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
     <!-- header end -->
     <main>
@@ -142,11 +215,22 @@
           <h2 class="title-team">Our Team</h2>
           <ul class="our-team">
             <li class="team-link">
-              <img
-                src="./images/our-team/mark_guerrero.jpg"
-                alt="Mark Guerrero"
-                width="264"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/our-team/mark-guerrero.jpg    1x,
+                    ./images/our-team/mark-guerrero@2x.jpg 2x
+                  "
+                  media="media="
+                  (min-width:
+                  320px)
+                />
+                <img
+                  src="./images/our-team/mark-guerrero.jpg"
+                  alt="Mark Guerrero"
+                  width="264"
+                />
+              </picture>
               <div class="name-prof">
                 <h3 class="title-team-name">Mark Guerrero</h3>
                 <p class="page-portfolio">Product Designer</p>
@@ -183,11 +267,22 @@
               </div>
             </li>
             <li class="team-link">
-              <img
-                src="./images/our-team/tom_ford.jpg"
-                alt="Tom Ford"
-                width="264"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/our-team/tom-ford.jpg    1x,
+                    ./images/our-team/tom-ford@2x.jpg 2x
+                  "
+                  media="media="
+                  (min-width:
+                  320px)
+                />
+                <img
+                  src="./images/our-team/tom-ford.jpg"
+                  alt="Mark Guerrero"
+                  width="264"
+                />
+              </picture>
               <div class="name-prof">
                 <h3 class="title-team-name">Tom Ford</h3>
                 <p class="page-portfolio">Frontend Developer</p>
@@ -224,11 +319,22 @@
               </div>
             </li>
             <li class="team-link">
-              <img
-                src="./images/our-team/camila_garcia.jpg"
-                alt="Camila Garcia"
-                width="264"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/our-team/camila-garcia.jpg     1x,
+                    ./images/our-team/camila-garciao@2x.jpg 2x
+                  "
+                  media="media="
+                  (min-width:
+                  320px)
+                />
+                <img
+                  src="./images/our-team/camila-garcia.jpg"
+                  alt="Mark Guerrero"
+                  width="264"
+                />
+              </picture>
               <div class="name-prof">
                 <h3 class="title-team-name">Camila Garcia</h3>
                 <p class="page-portfolio">Marketing</p>
@@ -266,11 +372,22 @@
               </div>
             </li>
             <li class="team-link">
-              <img
-                src="./images/our-team/daniel_wilson.jpg"
-                alt="Daniel Wilson"
-                width="264"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/our-team/daniel-wilson.jpg    1x,
+                    ./images/our-team/daniel-wilson@2x.jpg 2x
+                  "
+                  media="media="
+                  (min-width:
+                  320px)
+                />
+                <img
+                  src="./images/our-team/daniel-wilson.jpg"
+                  alt="Mark Guerrero"
+                  width="264"
+                />
+              </picture>
               <div class="name-prof">
                 <h3 class="title-team-name">Daniel Wilson</h3>
                 <p class="page-portfolio">UI Designer</p>
@@ -577,53 +694,56 @@
     </main>
 
     <!-- footer -->
-    <footer class="footer-own hidden">
+    <footer class="footer-own">
       <div class="container footer-container">
-        <div class="logo-paragraf">
-          <a class="logo logo-footer" href="./index.html">
-            Web
-            <span class="logo-footer-past">Studio</span>
-          </a>
-          <p class="page-footer">
-            Increase the flow of customers and sales for your business with
-            digital marketing & growth solutions.
-          </p>
+        <div class="logo-and-social">
+          <div class="logo-paragraf">
+            <a class="logo-footer" href="./index.html">
+              Web
+              <span class="logo-footer-past">Studio</span>
+            </a>
+            <p class="page-footer">
+              Increase the flow of customers and sales for your business with
+              digital marketing & growth solutions.
+            </p>
+          </div>
+
+          <div class="social-media-footer">
+            <p class="social-media">Social media</p>
+
+            <ul class="icon-menu-foot">
+              <li class="icon-social-foot">
+                <a href="" class="link-social-footer">
+                  <svg class="icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icon-social-foot">
+                <a href="" class="link-social-footer">
+                  <svg class="icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icon-social-foot">
+                <a href="" class="link-social-footer">
+                  <svg class="icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icon-social-foot">
+                <a href="" class="link-social-footer">
+                  <svg class="icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <div class="social-media-footer">
-          <p class="social-media">Social media</p>
-
-          <ul class="icon-menu-foot">
-            <li class="icon-social-foot">
-              <a href="" class="link-social-footer">
-                <svg class="icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="icon-social-foot">
-              <a href="" class="link-social-footer">
-                <svg class="icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="icon-social-foot">
-              <a href="" class="link-social-footer">
-                <svg class="icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="icon-social-foot">
-              <a href="" class="link-social-footer">
-                <svg class="icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
         <div class="subscribe">
           <p class="subscribe-text">Subscribe</p>
           <form class="subscribe-form">
@@ -638,8 +758,8 @@
 
             <button class="form-button" type="submit">
               Subscribe
-              <svg class="icon-sabscibe" width="24" height="24">
-                <use href="./images/icons-checkbox.svg#icon-button"></use>
+              <svg class="icon-sabscribe" width="24" height="24">
+                <use href="./images/icons.svg#icon-icon-button"></use>
               </svg>
             </button>
           </form>
@@ -649,11 +769,11 @@
     <!-- footer end -->
 
     <!-- modal overlay -->
-    <div class="modal-overlay hidden">
+    <div class="modal-overlay">
       <div class="modal">
         <button class="btn-close" type="button">
           <svg class="icon-close-modal" width="8" height="8">
-            <use href="./images/icons-checkbox.svg#icon-close"></use>
+            <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
         <p class="text-modal">Leave your contacts and we will call you back</p>
@@ -668,7 +788,7 @@
                 name="user-name"
               />
               <svg class="form-icon" width="18" height="24">
-                <use href="./images/icons-checkbox.svg#icon-person"></use>
+                <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
           </div>
@@ -678,7 +798,7 @@
             <div class="icon-input">
               <input class="form-input" id="phone" type="text" name="phone" />
               <svg class="form-icon" width="18" height="24">
-                <use href="./images/icons-checkbox.svg#icon-phone"></use>
+                <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
           </div>
@@ -688,7 +808,7 @@
             <div class="icon-input">
               <input class="form-input" id="email" type="text" name="email" />
               <svg class="form-icon" width="18" height="24">
-                <use href="./images/icons-checkbox.svg#icon-email"></use>
+                <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
           </div>
@@ -715,11 +835,13 @@
             <label class="form-label-privacy" for="user-privacy">
               <span class="form-label-privacy-part">
                 <svg class="check" width="10" height="8">
-                  <use href="./images/icons-checkbox.svg#icon-check"></use>
+                  <use href="./images/icons.svg#icon-icon-check"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a href="" class="link-privacy">Privacy Policy</a>
+              <div class="mob-version-privasy">
+                <p>I accept the terms and conditions of the</p>
+                <a href="" class="link-privacy">Privacy Policy</a>
+              </div>
             </label>
           </div>
 
