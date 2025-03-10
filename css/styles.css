@@ -109,20 +109,20 @@ button{
     color: #2e2f42;
 }
 
-.mob-btn{
+.mobile-button{
     padding: 0;
     border: none;
     background-color: transparent;
     margin-left: auto;
 }
 
-.mob-icon{
+.mobile-icon{
     display: block;
     fill: #2f2f37;
 }
 
 @media screen and (min-width: 768px) {
-.mob-btn{
+.mobile-button{
     display:none;
 }
 .header-nav {
@@ -231,7 +231,7 @@ button{
             1);
 }
 
-.mobile-menu.is-open {
+.mobile-menu .is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
@@ -247,7 +247,7 @@ button{
     height: 100%;
 }
 
-.mobile-button {
+.mobile-button-close {
     position: absolute;
     top: 24px;
     right: 24px;
@@ -946,7 +946,7 @@ padding: 100px 0;
                 0.2,
                 1);
     }
-.modal-overlay.is-open {
+.modal-overlay .is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
